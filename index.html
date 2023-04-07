@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Library App</title>
+  </head>
+  <body>
+    <h1>Welcome to My Library</h1>
+    <!-- ADD BOOK SECTION -->
+    <div class='addbook_container'>
+      <!-- BUTTON -->
+    <button id='add_book'>+ New Book</button>
+</div>
+<!-- FORM ENTRY -->
+ <div class="entry_popup" id="newbook_popup" style="display:none;">
+    <form id='form' action='/script.js'>
+      <!-- CLOSE BUTTON hide x for screen reader -->
+      <button class="close_btn" aria-label="Close form" type="button">
+        <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div id='book_inputs'>
+            <p><input type='text' id='title' name='title' placeholder='Title'></p>
+            <p><input type='text' id='author' name='author' placeholder='Author'></p>
+            <p><input type='text' id='pages' name='pages' placeholder='Pages'></p>
+        </div>
+        <!-- Read checkbox -->
+        <div id='read_checkbox'>
+            <p><label >Read: </label><input type='checkbox' id='read' name='read' checked='checked'></p>
+
+        <!-- SUBMIT -->
+        <button type='submit' form='form' id='submit_book'>Add Book</button>
+        </div>
+    </form>
+
+</div>
+<!-- library books here -->
+<div class='library'></div>
+<script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
