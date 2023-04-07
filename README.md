@@ -12,3 +12,5 @@ Challenges:
 - You also must plan out your classes/IDs of your created elements, and think ahead to how you want the classes organized.
 - The biggest challenge was figuring out how best to remove a selected book. The simplest way to do that is created the remove button without the "createBook" function, therefore that Remove button event listener is assigned to that book only. It is then spliced from the library. In the future, I'd like to look into another way of doing this, maybe by accessing an ID.
 
+<a href='https://janellemeowers.github.io/library-project/'>VIEW LIVE SITE</a>
+
